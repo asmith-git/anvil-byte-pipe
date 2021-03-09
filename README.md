@@ -1,5 +1,5 @@
 # Dependencies
-* [anvil-utils](https://github.com/asmith-git/anvil-utils)
+* None
 
 # Usage Example
 ```cpp
