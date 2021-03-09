@@ -13,8 +13,11 @@
 //limitations under the License.
 
 #include <cstddef>
+#include <stdexcept>
 #include "anvil/byte-pipe/BytePipeWriter.hpp"
-#include "anvil/lutils/Assert.hpp"
+
+#define ANVIL_CONTRACT(CONDITION,MESSAGE) if(! (CONDITION)) throw std::runtime_error(MESSAGE);
+#define ANVIL_ASSUME(CONDITION) __assume(CONDITION);
 
 namespace anvil { namespace BytePipe {
 
